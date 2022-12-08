@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Verlet Integration</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background: #11121F;
+    }
+
+    #canvas {
+      border: 2px solid white;
+      width: 340px;
+      height: 360px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .heading {
+      display: flex;
+      width: 100vw;
+      height: 20vh;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .heading #verlet-heading {
+      color: white;
+      font-size: 36px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="heading">
+    <h1 id="verlet-heading"> Verlet Integration</h1>
+  </div>
+
+  <canvas id="canvas">
+  </canvas>
+
+  <script src="vector.js"></script>
+  <script src="particle.js"></script>
+  <script src="stick.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
